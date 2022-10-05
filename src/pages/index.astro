@@ -6,13 +6,13 @@ import Services from "../components/Services.astro";
 
 import "../styles/base.css";
 import Footer from "../components/Footer.astro";
-import ContactForm from "../components/ContactForm.astro";
+import { ContactForm } from "../components/ContactForm";
 ---
 
 <Layout title="Welcome to Astro.">
   <Header />
   <Hero />
   <Services />
-  <ContactForm />
+  <ContactForm client:visible />
   <Footer />
 </Layout>
