@@ -1,0 +1,92 @@
+---
+---
+
+<section class="bg-darkergray py-4 text-gray-200">
+  <div class="bg-darkgray py-16 pb-24">
+    <h2
+      class="page-wrap text-4xl md:text-5xl font-bold mb-12 md:mb-24 tracking-wide text-center"
+    >
+      Get in Touch
+    </h2>
+    <form data-js="fastwebsites-form" class="page-wrap max-w-md">
+      <div class="max-w-sm">
+        <div class="mb-6">
+          <input
+            name="address"
+            data-js="fastwebsites-form-address"
+            class="absolute left-[-10000px]"
+            id="address"
+            type="text"
+            tabindex="-1"
+          />
+          <label class="block text-gray-200 text-sm font-bold mb-2" for="name">
+            Name
+          </label>
+          <input
+            name="name"
+            data-js="fastwebsites-form-input"
+            class="shadow appearance-none rounded bg-darkergray w-full py-2 px-3 text-gray-200 leading-tight focus:outline-none focus:shadow-outline"
+            id="name"
+            type="text"
+          />
+        </div>
+        <div class="mb-6">
+          <label class="block text-gray-200 text-sm font-bold mb-2" for="email">
+            Email
+          </label>
+          <input
+            name="email"
+            data-js="fastwebsites-form-input"
+            class="shadow appearance-none bg-darkergray rounded w-full p-3 text-gray-200 leading-tight focus:outline-none focus:shadow-outline"
+            id="email"
+            type="email"
+            required
+          />
+        </div>
+        <div class="mb-6">
+          <label class="block text-gray-200 text-sm font-bold mb-2" for="tel">
+            Phone Number
+          </label>
+          <input
+            name="tel"
+            data-js="fastwebsites-form-input"
+            class="shadow appearance-none bg-darkergray rounded w-full p-3 text-gray-200 leading-tight focus:outline-none focus:shadow-outline"
+            id="tel"
+            type="tel"
+            required
+          />
+        </div>
+        <div class="mb-6">
+          <label
+            class="block text-gray-200 text-sm font-bold mb-2"
+            for="message"
+          >
+            Message
+          </label>
+          <textarea
+            name="message"
+            data-js="fastwebsites-form-input"
+            class="shadow appearance-none bg-darkergray rounded w-full py-2 px-3 text-gray-200 leading-tight focus:outline-none focus:shadow-outline"
+            rows="8"></textarea>
+        </div>
+        <div class="relative">
+          <button
+            class="block w-full bg-green-900 hover:bg-green-800 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline disabled:bg-gray-800 disabled:hover:cursor-wait"
+            data-js="form-submit-btn"
+            type="submit"
+          >
+            Send Message
+          </button>
+
+          <div
+            data-js="form-success-message"
+            class="w-full absolute top-0 transform translate-y-10 opacity-0"
+          >
+            <p class="text-lg text-center">Thank you for your message.</p>
+            <p class="text-lg text-center">We'll be in touch soon!</p>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>

@@ -1,0 +1,33 @@
+---
+import LogoSVG from "./svg/Logo.astro";
+import PhoneSVG from "./svg/Phone.astro";
+---
+
+<header class="bg-darkergray">
+  <div class="page-wrap py-4 flex flex-row justify-between relative">
+    <div class="w-[120px] md:w-[135px] lg:w-[150px] relative">
+      <LogoSVG />
+    </div>
+
+    <span
+      class="text-xl md:text-xl font-bold flex flex-row items-center md:order-last bottom-0 z-10"
+    >
+      <div class="w-3 md:w-4">
+        <PhoneSVG />
+      </div>
+      <a
+        href="tel:07806405208"
+        class="ml-3 text-base lg:text-xl lg:ml-5 text-bold text-gray-200"
+      >
+        07806 405 208
+      </a>
+    </span>
+
+    <div
+      data-js="mob-nav"
+      class="hidden md:hidden h-screen fixed top-0 transform translate-x-full z-40"
+      id="mobile-menu"
+    >
+    </div>
+  </div>
+</header>

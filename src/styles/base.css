@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+@layer base {
+  body {
+    font-family: "Roboto", sans-serif;
+    @apply text-gray-200;
+  }
+
+  .img-cover img {
+    @apply object-cover w-full h-full;
+  }
+
+  .prose > * + * {
+    margin-top: 2rem;
+  }
+
+  .prose p {
+    @apply max-w-2xl;
+  }
+
+  .prose * + h2 {
+    padding-top: 3rem;
+  }
+  .prose h2 {
+    font-size: 2.4rem;
+    font-weight: 500;
+    @apply text-gray-900;
+    line-height: 1.1;
+    /* padding-bottom: 1rem; */
+  }
+
+  .prose h3 {
+    font-size: 1.9rem;
+    font-weight: 600;
+    @apply text-gray-900;
+    line-height: 1.1;
+    padding-top: 3rem;
+  }
+
+  .prose ul,
+  ol {
+    @apply px-4 mx-4;
+  }
+
+  .prose ul {
+    list-style-type: disc;
+  }
+  .prose blockquote {
+    /* !!! */
+    @apply italic text-gray-900 text-2xl py-8;
+    @apply md:text-3xl;
+    font-weight: 500;
+  }
+
+  .prose cite {
+    @apply text-sm not-italic py-4;
+  }
+
+  /* p {
+    @apply max-w-4xl;
+  } */
+  .page-wrap {
+    @apply max-w-6xl m-auto px-3 md:px-8;
+  }
+
+  .homepage_card .homepage_card__description {
+    @apply transform lg:translate-y-full;
+  }
+
+  .homepage_card:hover .homepage_card__description {
+    @apply translate-y-0;
+  }
+
+  /* 
+  
+  Mob Nav */
+
+  .body--mob-nav-show {
+    transform: translateX(300px);
+  }
+}
